@@ -160,6 +160,7 @@ So when a trigger is triggered, this will be the message sent to Rocket.Chat:
 
 __Note:__
 To view the graphs, you need to be logged in to Zabbix.
+
 ORRRR... you can enable `guest` userand grant read permission to any graph related host. - Vitor Jr. - 20191204
 
 
