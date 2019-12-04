@@ -1,3 +1,12 @@
+# To do
+- [ ] Refactor: create an all new bot to interact with channel
+- [ ] Allow acknowledges replying to 
+
+# Done
+- [x] Integrate zabbix with rocketchat
+- [x] Custom message with custom emoticons on channel
+- [x] Fix graphs not showing on channel
+
 # rocketchat-zabbix
 Sends Zabbix notifications to Rocket.Chat, an Open Source Slack Alternative (Tested on Zabbix 2.4.5. For higher versions, change similar parameters.)
 
