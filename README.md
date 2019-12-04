@@ -156,7 +156,7 @@ Click in Add to Operation details and Add in screen.
 
 So when a trigger is triggered, this will be the message sent to Rocket.Chat:
 
-![Rocket.Chat Trigger](img/triggers.PNG)
+![Rocket.Chat Trigger](img/triggers.png)
 
 __Note:__
 To view the graphs, you need to be logged in to Zabbix.
