@@ -92,14 +92,14 @@ In __Configuration > Actions__, select "event source: Triggers", and click in Cr
 * Default message:
 ```json
 {
-  "text": ":negative_squared_cross_mark: *{TRIGGER.NAME} ({ITEM.VALUE1})*",
+  "text": ":fire_engine: - Psssss: *{TRIGGER.NAME} - Value: ({ITEM.VALUE1})*",
   "attachments": [
     {
       "color": "#FF0000",
-      "title": "[INCIDENT] {HOST.NAME}  ({HOST.CONN})",
-      "title_link": "https://zabbix.example.com/tr_events.php?triggerid={TRIGGER.ID}&eventid={EVENT.ID}",
+      "title": "[INCIDENT]: {HOST.NAME}-({HOST.CONN})-{EVENT.NAME}",
+      "title_link": "https://zabbix-example.com/tr_events.php?triggerid={TRIGGER.ID}&eventid={EVENT.ID}",
       "text": "Verified in {TIME}, at {EVENT.DATE}",
-      "image_url": "https://zabbix.example.com/chart3.php?&width=900&height=200&period=3600&name={HOST.NAME}: {TRIGGER.NAME}&legend=1&items[0][itemid]={ITEM.ID}&items[0][drawtype]=5&items[0][color]=ff0000"
+      "image_url": "https://zabbix-example.com/chart3.php?&width=1270&height=260&from=now-15m&to=now&name={HOST.NAME}: {TRIGGER.NAME}&legend=1&items[0][itemid]={ITEM.ID}&items[0][drawtype]=5&items[0][color]=FF0000"
     }
   ]
 }
@@ -111,14 +111,14 @@ Click in Recovery message
 * Recovery message:
 ```json
 {
-  "text": ":white_check_mark: *{TRIGGER.NAME} ({ITEM.VALUE1})*",
+  "text": ":beach: - Ufa!: *{TRIGGER.NAME} - Value: ({ITEM.VALUE1})*",
   "attachments": [
     {
       "color": "#00FF00",
-      "title": "[OK] {HOST.NAME}  ({HOST.CONN})",
-      "title_link": "https://zabbix.example.com/tr_events.php?triggerid={TRIGGER.ID}&eventid={EVENT.ID}",
+      "title": "[OK]: {HOST.NAME}-({HOST.CONN})-{EVENT.NAME}",
+      "title_link": "https://zabbix-example.com/tr_events.php?triggerid={TRIGGER.ID}&eventid={EVENT.ID}",
       "text": "Verified in {TIME}, at {EVENT.DATE}",
-      "image_url": "https://zabbix.example.com/chart3.php?&width=900&height=200&period=3600&name={HOST.NAME}: {TRIGGER.NAME}&legend=1&items[0][itemid]={ITEM.ID}&items[0][drawtype]=5&items[0][color]=00ff00"
+      "image_url": "https://zabbix-example.com/chart3.php?&width=1270&height=260&from=now-15m&to=now&name={HOST.NAME}: {TRIGGER.NAME}&legend=1&items[0][itemid]={ITEM.ID}&items[0][drawtype]=5&items[0][color]=00FF00"
     }
   ]
 }
@@ -156,7 +156,7 @@ Click in Add to Operation details and Add in screen.
 
 So when a trigger is triggered, this will be the message sent to Rocket.Chat:
 
-![Rocket.Chat Trigger](https://paste.opensuse.org/images/58705750.png)
+![Rocket.Chat Trigger](img/triggers.PNG)
 
 __Note:__
 To view the graphs, you need to be logged in to Zabbix.
